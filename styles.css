@@ -189,9 +189,33 @@ nav {
     margin-left: -120px;
     margin-right: 50px;
     align-content: center;
+    position: relative;
+}
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+}
+
+    button:hover {
+        opacity: 1;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+    }
    
   
-}
+
 
 #foto2 {
     float: left;
@@ -199,6 +223,7 @@ nav {
     height: 280px;
     padding: 5px 9px 5px 0;
     margin-right: 50px;
+    position: relative;
 }
 
 #foto3 {
@@ -207,6 +232,7 @@ nav {
     height: 280px;
     padding: 5px 9px 5px 10px;
     padding: 5px;
+    position:relative;
 }
 
 .sign {
