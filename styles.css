@@ -1,229 +1,462 @@
-<!doctype html>
-<html>
-    <head>
-
-        <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="styles.css">
-        <link href="css/style.css" rel="stylesheet">
-
-        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-
-        <link href="css/rreth_nesh.css" rel="stylesheet">
-        <title>Fluturimet </title>
-        <link rel="stylesheet" type="text/css" href="css\fotoja.css">
-        <link href="css/styles.css"rel="stylesheet">
-        <style>
+#logo {
+    margin-right: 150px;
+    zoom: 1.7;
+    margin-left: 30px;
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 35px;
+    float: left;
+}
 
 
-            body{
-
-                background-color:#ccddd4;
-
-            }
-           
-
-        </style>
-    </head>
-
-    <body>
-
+#cssmenu > ul {
+    
+  background: url(images/highlight-bg.png) repeat;
+  padding-bottom: 3px;
+  
+font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > 
+ul:before,
+#cssmenu > ul:after {
+  content: "";
+  display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  
+clear: both;
+}
+#cssmenu {
+    width: auto;
+    zoom: 1;
+   
+}
+    #cssmenu > ul {
+        background-color:aliceblue;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      
+    }
+    #cssmenu > ul li {
+        margin: 0;
+        padding: 0;
        
+        list-style: none;
+    }
+#cssmenu > ul > li {
+  float: left;
+  position: relative;
+ 
+}
+.last{
+	float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 23px 26px;
+  display: block;
+  color: darkblue;
+  font-size: 
+13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 -1px 0 #c28130;
+  text-shadow: 0 -1px 0 rgba(151, 99, 33, 0.43);
+  line-height: 18px;
+}
+#cssmenu > ul > li:hover > a {
+  
+background: url(images/hover.png) repeat;
+}
+#cssmenu > ul > li > a > span {
+  line-height: 18px;
+}
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li > a:active {
+  background: url(images/highlight-bg.png) repeat;
+}
+/* Childs */
+#cssmenu > ul ul {
+  opacity: 0;
+  visibility: hidden;
+  position: 
+absolute;
+  top: 120px;
+  background: url(images/hover.png) repeat;
+  margin: 0;
+  padding: 0;
+  z-index: 
+-1;
+  -webkit-transition: all 0.35s 0.2s ease-in-out;
+  -moz-transition: all 0.35s 0.2s ease-in-out;
+  
+  
+  transition: all 0.35s 0.2s ease-in-out;
+}
+#cssmenu > ul 
+li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  color: #000;
+  z-index: 2;
+  top: 64px;
+  
+left: 0;
+}
+#cssmenu > ul ul:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  
+height: 20px;
+  background: transparent;
+}
+#cssmenu > ul ul li {
+  list-style: none;
+  padding: 0;
+  
+margin: 0;
+  width: 100%;
+}
+#cssmenu > ul ul li a {
+  padding: 18px 26px;
+  display: block;
+  color: 
+white;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  
+border-left: 4px solid transparent;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: 
+all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  
+text-shadow: 0 -1px 0 #c28130;
+  text-shadow: 0 -1px 0 rgba(151, 99, 33, 0.43);
+}
+#cssmenu > ul ul li 
+a:hover {
+    border-left: 4px solid #055988;
+  background: url(images/highlight-bg.png) repeat;
+}
+#cssmenu > ul ul li a:active {
+  background: url(images/menu-bg.png) repeat;
+  
+}
 
-        <div id='cssmenu'>
-            <div id="emri">
-
-                <img id="logo" src="images/llogoja2.png" />
-                <img id="express" src="images/express.png" />
-
-            </div>
-            <ul>
-                <li class='has-sub'><a href="index.html"><span>Kryefaqja</span></a></li>
-                <li class='has-sub'>
-                    <a><span>Informacione</span></a>
-                    <ul class="sub-menu">
-                        <li><a href='rreth_nesh.html'><span>Rreth nesh</span></a></li>
-                        <li><a href='sherbimet.html'><span>Sherbimet</span></a></li>
-                    </ul>
-                </li>
-                <li class='last'><a href="statusi.html"><span>Statusi</span></a></li>
-                <li class='last'><a href='nje-drejtimshe.html'><span>Rezervimet</span></a></li>
-                <li class='last'><a href='login.html'><span>Ky&ccedil;ja</span></a></li>
-                <li class='last'><a href='sent_email.html'><span>Na kontaktoni</span></a></li>
-
-
-            </ul>
-        </div>
-        <nav>
-            <div id="foto1">
-                <a href="reserve.html">
-                    <img src="images/stambo1.jpg" alt="The picture is unavailable." id="stamboll">
-                </a>
-                <h2>Instabul</h2>
-                <p>Istanbul has a timeless charm that owes much to its rich history. The city was historically referred to as Byzantium and Constantinople.</p>
-            </div>
-            <div id="foto2">
-                <a href="reserve.html">
-                    <img src="images/kuala.jpg" alt="The picture is unavailable.">
-                </a>
-                <h2>Kuala Lumpur</h2>
-                <p>Istanbul has a timeless charm that owes much to its rich history. The city was historically referred to as Byzantium and Constantinople.</p>
-            </div>
-            <div id="foto3">
-                <a href="reserve.html">
-                    <img src="images/zimba.jpg" alt="The picture is unavailable.">
-                </a>
-                <h2>Kuala Lumpur</h2>
-                <p>Istanbul has a timeless charm that owes much to its rich history. The city was historically referred to as Byzantium and Constantinople.</p>
-            </div>
-        </nav>
-        <hr>
-        <div class="sign">
-            <div id="subscribe">
-                <h1> Subscribe </h1>
-                <h4>And get the latest deals!</h4>
-            </div>
-            <div id="signup">
-                <input type="email" name="Email" placeholder="Email" />
-                <input type="submit" value="Sign Up" />
-            </div>
-        </div>
-        <hr>
-
-
-        <article>
-            <header>
-                <h2>Top 9 destinacionet</h2>
-            </header>
-            <div id="pjesa-trete">
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/f4.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Jakarta</span>
-                        <span class="cmimi">&Ccedil;mimi:250&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Prishtina</span>
-                    </div>
-                </section>
-
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/foto1.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Lisbon</span>
-                        <span class="cmimi">&Ccedil;mimi:280&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Peja</span>
-                    </div>
-                </section>
-
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/foto10.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Taipei</span>
-                        <span class="cmimi">&Ccedil;mimi:230&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Shkupi</span>
-                    </div>
-                </section>
-
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/f6.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Auckland</span>
-                        <span class="cmimi">&Ccedil;mimi:180&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Tirana</span>
-                    </div>
-                </section>
-
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/paaris.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Paris</span>
-                        <span class="cmimi">&Ccedil;mimi:200&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Tetova</span>
-                    </div>
-                </section>
-
-                <section id="p3">
-                    <div class="d1">
-                        <a href="nje-drejtimshe.html"><img class="destinacionet" src="images/f1.jpg"></a>
-                    </div>
-                    <div class="Informatat2">
-                        <span class="vendi">Stamboll</span>
-                        <span class="cmimi">&Ccedil;mimi:320&euro;</span>
-                        <span class="nisja">Nisja nga:<br>Prishtina</span>
-                    </div>
-                </section>
+body{
+font-family:Verdana;
 
 
-            </div>
-
-
-        </article>
-        <br>
-        <br>
-        <br>
+}
 
 
 
 
 
 
+nav {
+    margin-left: 250px;
+    margin-bottom: 35%;
+    margin-top: 20px;
+    color: darkblue;
+}
+    nav img {
+        margin: 0 0 0 5px;
+        padding: 0 0 0 0;
+        width: 300px;
+        height: 280px;
+        border-radius: 20px;
+        border: 5px solid white;
+       
+    }
+#foto1 {
+    float: left;
+    width: 300px;
+    height: 280px;
+    padding: 5px 9px 5px 0;
+    margin-left: -120px;
+    margin-right: 50px;
+    align-content: center;
+   
+  
+}
 
-        <footer>
-            <div class="footer_container">
-                <div class="container">
-                    <h3>ABOUT US</h3>
+#foto2 {
+    float: left;
+    width: 300px;
+    height: 280px;
+    padding: 5px 9px 5px 0;
+    margin-right: 50px;
+}
 
-                    <p>Speed Air has been flying for 20 years and is Kosovo's most established private airline. Our experienced cabin and maintenance crew ensure maximum flight safety and security. Speed Air operates an affordable and flexible pricing policy that considers quality and customer satisfaction.</p>
+#foto3 {
+    float: left;
+    width: 300px;
+    height: 280px;
+    padding: 5px 9px 5px 10px;
+    padding: 5px;
+}
 
-                </div>
-                <div class="container">
-                    <h3>FLIGHTS</h3>
-                    <ul>
-                        <li><a href="./lisbon.html">Lisbon</a></li>
-                        <li><a href="./berlin.html">Berlin</a></li>
-                        <li><a href="./telaviv.html">Tel Aviv</a></li>
-                        <li><a href="./london.html">London</a></li>
-                        <li><a href="./Phuket.html">Phuket</a></li>
-                        <li><a href="./kuala.html">Kuala Lumpur</a></li>
-                        <li><a href="./hongkong.html">Hong Kong</a></li>
-                        <li><a href="./paris.html">Paris</a></li>
-                    </ul>
-                </div>
-                <div class="container">
-                    <h3>FEEDBACK</h3>
-                    <ul>
-                        <li><a href="">@jessy45</a>Had  the most amazing experience with #RocketAir</li>
-                        <li><a href="">@kissington</a>Professionalim at its best! Way to go #RocketAir</li>
-                    </ul>
-                </div>
+.sign {
+    width: 100%;
+    height: 100px;
+    background: url(images/highlight-bg.png);
+    box-sizing: border-box;
+    display: inline-block;
+}
 
-                <div class="container">
-                    <h3>CONTACT US</h3>
-                    <label></label>
-                    <input type="text" name="Username" placeholder="Username">
-                    <label></label>
-                    <input type="text" name="Password" placeholder="Password" />
-                    <textarea name="message" rows="3" cols="21" placeholder="Message"></textarea>
-                    <br>
-                    <input type="submit" value="Submit" />
+#subscribe {
+    float: left;
+    width: 30%;
+    height: 100px;
+    margin-left: 350px;
+    text-align: center;
+    
+}
+
+    #subscribe h1, h4 {
+        display: block;
+        text-align: left;
+        color: darkblue;
+    }
+
+    #subscribe h1 {
+        margin-top: 25px;
+        
+    }
+
+    #subscribe h4 {
+        margin-top: -20px;
+    }
+
+#signup {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 120px;
+}
+
+    #signup input[type=submit] {
+        padding: 5px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    #signup input[type=email] {
+        padding: 5px;
+        font-size: 15px;
+        padding-right: 40px;
+        border-radius: 5px;
+    }   
+article>header h2
+{
+color:white;
+font-weight:normal;
+text-align:center;
+margin:0.4em;
+}
 
 
-                </div>
-            </div>
-        </footer>
 
-        <div  id="bottom">
-            <p><em>&copy; 2019 <strong>Rocket Air</strong>. All rights reserved.</em></p>
-        </div>
 
-    </body>
-</html>
+section{
+float:left;
+text-align:center;
+font-family:Verdana;
+width:210px;
+border-right:1px solid #006565;
+position:relative;
+left:22px;
+
+}
+
+
+#pjesa-trete {
+    width: 98%;
+    background-color: none;
+    height: 500px;
+    margin: 10px;
+  color: #006565;
+    
+}
+
+.vendi
+{
+color: #006565;
+font-size: 20px;
+display:block;
+line-height: 1.42857143;
+text-align:left;
+font-weight:bold;
+
+}
+.cmimi
+{
+color: red;
+font-size: 14px;
+display:block;
+line-height: 1.42857143;
+text-align:left;
+text-decoration:underline;
+}
+.nisja
+
+{
+color:#006565 ;
+font-size: 15px;
+display:block;
+line-height: 1.42857143;
+text-align:left;
+}
+
+.destinacionet
+{
+	
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	margin:20px;
+		
+}
+	
+	
+	
+#p3
+{
+	width:330px;
+	height: 260px;
+	text-align:left;
+	border:none !important;
+	position:relative;
+	left:60px;
+	margin:10px;
+	background-color:#e5e0e0;
+	 background: linear-gradient(#e5e0e0, #abd3c5);
+}
+#p3 h2{
+    margin-top:80px;
+    text-align: center;
+}
+#p3 p{
+    text-align:center;
+}
+.vendi a
+{
+	color:red;
+}
+
+
+.Informatat2{
+	position:relative;
+	bottom:150px;
+	left:220px;
+	
+	
+	
+}
+
+
+footer {
+    margin: 20px 0 0 0;
+    background-color: rgb(32,32,32);
+    
+}
+
+.footer_container {
+    width: 100%;
+    padding-bottom: 8cm;
+    padding-top: 5px;
+    overflow: hidden;
+    padding-left: 50px;
+    height: 5px;
+    clear: right;
+}
+
+.container {
+    float: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.footer_container div.container {
+    width: 250px;
+    float: left;
+    padding: 20px;
+}
+
+.footer_container ul {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin-left: 0 !important;
+}
+
+    .footer_container ul li {
+        width: 170px;
+        padding: 2px;
+        color: darkgrey;
+    }
+
+        .footer_container ul li a {
+            color: darkgrey;
+        }
+
+            .footer_container ul li a:link {
+                color: darkgrey;
+                text-decoration: none;
+            }
+
+        .footer_container ul li:hover {
+            border-bottom: 1px solid;
+            border-color: #808080;
+        }
+
+
+.footer_container div.container h3 {
+    border-bottom: 1px solid gray;
+    color: darkgrey;
+    font-size: 20px;
+}
+
+.footer_container div.container p {
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.footer_container div.container input[type=text] {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.footer_container div.container textarea {
+    padding: 8.5px;
+    border-radius: 5px;
+}
+
+.footer_container div.container input[type=submit] {
+    padding: 5px 10px 5px 10px;
+    float: right;
+    margin-right: 67px;
+    border-radius: 5px;
+}
+
+#bottom {
+    margin: -15px 0 -15px 0;
+    padding: 0;
+    background-color: grey;
+    position: static;
+    font-size: 14px;
+}
