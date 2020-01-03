@@ -1,0 +1,17 @@
+﻿body{
+	background-color: transparent;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    background-size: cover;
+	color: #fff;
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 13px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
