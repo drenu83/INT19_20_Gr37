@@ -201,9 +201,6 @@ button {
     font-size: 16px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
     padding: 16px 32px;
 }
 
