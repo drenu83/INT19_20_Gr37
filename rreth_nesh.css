@@ -58,7 +58,7 @@ transform:rotate(360deg);
 -webkit-transform:scale(0.9);
 -ms-transform:scale(0.9);
 transform:scale(0.9);
-
+margin-bottom: -400px;
 
 resize:both;/*user-interface */
 overflow:auto;
