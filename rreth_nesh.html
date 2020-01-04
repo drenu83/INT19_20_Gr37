@@ -8,27 +8,76 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <style>
-           
-
             dl, #Kontakti{
                 padding: 5px;
                 text-align: center;
                 background-color: transparent;
-
             }
-
-
             dl {
                 padding: 50px;
                 display: none;
             }
         </style>
+         <script>
+        $(document).ready(function () {
+            $("#animation").click(function () {
+                var div = $("#animation");
+                div.animate({ height: '300px', opacity: '0.4' }, "slow");
+                div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#Kontakti").mouseover(function () {
+                $("dl").slideDown("slow");
+            });
+            $("#Kontakti").mouseleave(function () {
+                $("dl").slideUp("slow");
+            });
+        });
+    </script>
+
+
+    
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#kufiri").fadeTo("slow", 0.15);
+
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn4").click(function () {
+                $("#fsheh").hide("slow", function () {
+                    alert("Paragrafi tani është fshehur.");
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function clickCounter() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("result").innerHTML = "Ju keni klikuar " + localStorage.clickcount + " here.";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+        </head>
     <body style="background-image: url('images/bg.png');">
-
-        <style>
-
-        </style>
-    </head>
  <body>
         <div id='cssmenu'>
 
