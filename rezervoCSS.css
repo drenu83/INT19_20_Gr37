@@ -5,7 +5,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 h1 {
   display: table;
   margin: 40px auto;
@@ -14,16 +13,13 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-
 form {
   display: table;
   margin: 40px auto;
-  
-  label {
+label {
     position: relative;
     display: block;
-    
-    input {
+input {
       font: 18px Verdana, Arial, sans-serif;
       box-sizing: border-box;
       display: block;
@@ -34,22 +30,21 @@ form {
       font-size: 18px;
       outline: none;
       transition: all 0.2s ease-in-out;
-      
-      placeholder {
+ placeholder {
         transition: all 0.2s ease-in-out;
         color: #999;
         font: 18px Verdana, Arial, sans-serif;
       }
       
-      focus, populated {
+ focus, populated {
         padding-top: 28px;
         padding-bottom: 12px;
         
-        placeholder {
+ placeholder {
           color: transparent;
         }
         
-         span {
+ span {
           opacity: 1;
           top: 10px;
         }
