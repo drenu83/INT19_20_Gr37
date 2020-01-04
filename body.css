@@ -4,14 +4,12 @@
     background-position:center;
     background-attachment: fixed;
     background-size: cover;
-   
     background-size: cover;
 	color: #fff;
 	font-family: 'Josefin Slab', Arial, sans-serif;
 	font-size: 13px;
 }
-
 a{
-	color: #fff;
-	text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
