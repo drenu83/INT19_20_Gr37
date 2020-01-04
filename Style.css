@@ -27,7 +27,7 @@
 .responstable th:nth-child(2) {
     display: table-cell;
 }
-.responstable th:nth-child(2) span {
+.responstable th:nth-child(2) span { 
     display: none;
 }
 .responstable th:nth-child(2):after {
