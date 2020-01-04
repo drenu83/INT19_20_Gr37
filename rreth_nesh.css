@@ -8,7 +8,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
 a:link {
 	color: black;
 }
@@ -19,33 +18,27 @@ a:visited {
 	background-color: #c8c9ce;
 	opacity: 0.8;
 	z-index:1;	
-	
-}
+	}
 #map{
 	position:relative;
 	padding-left:180px;
-	
-}
+	}
 #titulli{
 	text-align: center;
 	text-shadow: 7px 7px 5px #938c8c;
-	
-}
+	}
 #teksti{
 	font-style: italic;
 font-size: 20px;
 font-family: Verdana;	
 }
-
 #b1{
-	
 	width: 100px;
 	height: 30px;
 	border: 2px solid #8c9299;
 	background-color:#bbc1c9;
 	border-radius: 50%
 }
-
 
 #kufiri
 {
