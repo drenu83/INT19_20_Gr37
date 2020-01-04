@@ -87,4 +87,15 @@ h1 span {
     font-family: Verdana;
 	color: white;
 }
-
+#gjej{
+    width:100px;
+    height:30px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+#rifreskimi {
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
