@@ -67,10 +67,9 @@
 }
 body {    padding: 0;
 	  margin: 0;
-   
-    font-family: 'Open Sans', sans-serif;
-    color: #024457;
-    background: #f2f2f2;
+          font-family: 'Open Sans', sans-serif;
+          color: #024457;
+          background: #f2f2f2;
 }
 h1 {
     font-family: Verdana;
