@@ -6,31 +6,26 @@
         <link rel="stylesheet" type="text/css" href="body.css">
         <link href="styles.css" rel="stylesheet">
 	     <title>Air Transat</title>
-        <style>
-		 @font-face {
+       <style>
+            @font-face {
                      font-family: "Bitstream Vera Serif Bold";
               src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
             }
     
             body { font-family: "Bitstream Vera Serif Bold", serif }
             .wrap{
-
-            .wrap{
-		    
-	        max-width:350px;
+	        max-width:400px;
 	        border-radius:20px;
 	        margin:auto;
 	        background: rgba(0,0,0,0.8);
 	        box-sizing:border-box;
-	        padding:35px;
+	        padding:40px;
 	        color:#fff;
 	        margin-top:100px;
               }
-                
-		h2{
+                h2{
 	        text-align:center;
         }
-		
         input[type=radio]{
 	        margin-top:20px;
 	        opacity: 0.5;
@@ -39,7 +34,7 @@
         #gjinia{
 	        margin-left:100px;
         }
-        #name, #username,#email,#pass{
+        input[type=text], input[type=password]{
 	        width:100%;
 	        font-size:15px;
 	        box-sizing:border-box;
@@ -53,7 +48,7 @@
 	        margin:5px;
 	        font-weight:bold;
         }
-        #btn{
+        input[type=submit]{
 	        width:100%;
 	        box-sizing:border-box;
 	        padding:10px 0;
@@ -71,21 +66,23 @@
 	        opacity:0.7;
         }
             #cssmenu{
-                margin: -10px -15px 0 -10px;              
+                margin: -10px -10px 0 -10px;              
             }
             footer{
                 margin: 20px -10px -10px -10px;   
             }
+            
+
         </style>
         <title>Kyqja</title>
         
     </head>
 
-    <body style="background-image: url(bg.png);">
+    <body style="background-image: url(images/bg.png);">
         <div id='cssmenu'>
 
             <ul>
-                <li><img id="logo" src="logo1.png" /></li>
+                <li><img id="logo" src="images/logo1.png" /></li>
                 <li class='has-sub'><a href="index.html"><span>Kryefaqja</span></a></li>
                 <li class='has-sub'>
                     <a><span>Informacione</span></a>
@@ -107,12 +104,12 @@
             <form onsubmit="return false;" method="POST">
                 <input type="text" id="name" placeholder="Name"><br>
                 <input type="text" id="username" placeholder="Username"><br>
-                <input type="text" id="email" placeholder="Email"><br>
+                <input type="text" id="email" placeholder="Email" autocomplete="off"><br>
                 <input type="password" id="pass" placeholder="Password">
                 <input type="radio" name="sex" value="Mashkull">Mashkull
                 <input type="radio" id="gjinia" name="sex" value="Femer">Femer<br>
-		<input type="checkbox" id="agree" name="sex" value="Terms">Prano kushet<br>
-                <input type="submit" value="submit" id="btn" onclick="notEmpty()">
+                <input type="checkbox" id="agree" name="sex" value="Terms">Prano kushet<br>
+                <input type="submit" value="submit" onclick="notEmpty()">
             </form>
             <script type="text/javascript">
                 function notEmpty() {
@@ -137,11 +134,9 @@
             <footer>
                 <div class="footer_container">
                     <div class="container">
-			    
                         <h3>RRETH NESH</h3>
 
-                        <p>Air Transat ka fluturuar për 20 vjet dhe është linja ajrore private më e themeluar e Kosovës. Kabina jonë me përvojë dhe ekuipazhi i mirëmbajtjes dhe ofrojne sigurinë maksimale të fluturimit.
-				Air Transat operon një politikë çmimi të përballueshëm dhe fleksibël që konsideron cilësinë dhe kënaqësinë e klientit.</p>
+                        <p>Speed Air has been flying for 20 years and is Kosovo's most established private airline. Our experienced cabin and maintenance crew ensure maximum flight safety and security. Speed Air operates an affordable and flexible pricing policy that considers quality and customer satisfaction.</p>
 
                     </div>
                     <div class="container">
@@ -160,13 +155,13 @@
                     <div class="container">
                         <h3>FEEDBACK</h3>
                         <ul>
-                            <li><a href="">@ArditaKras</a>Had  the most amazing experience with #AirTransat</li>
-                            <li><a href="">@AlbinaZekaj</a>Professionalim at its best! Way to go #AirTransat</li>
+                            <li><a href="">@jessy45</a>Had  the most amazing experience with #RocketAir</li>
+                            <li><a href="">@kissington</a>Professionalim at its best! Way to go #RocketAir</li>
                         </ul>
                     </div>
 
                     <div class="container">
-                        <h3>KONTAKTONI</h3>
+                        <h3>NA KONTAKTONI</h3>
                         <form action="MAILTO:drenushe.p@gmail.com">
                         <input type="text" name="Username" placeholder="Username" />
                         <br />
@@ -177,6 +172,8 @@
                         <input type="submit" value="Submit" />
 
                         </form>
+
+
                     </div>
                 </div>
             </footer>
