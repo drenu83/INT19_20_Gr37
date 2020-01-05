@@ -1,60 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <  <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <link rel="stylesheet" href="styles.css">
-        <link href="css/footer.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="rezervoCSS.css">
+        <link rel="stylesheet" type="text/css" href="css/rezervoCSS.css">
+        <link rel="stylesheet" href="styles.css"> 
+    
+    </head>
+    <body style="background-image: url(images/bg.png);">
+        <div id='cssmenu'>
 
-    <body style="background-image: url(bg.png);">
-        <style>
-            footer{
-                position: relative;
-                height: 80px;
-                width: 100%;
-                background: #01739F;
-                bottom:0;
-                text-align: center;
-                color: white;
-                clear:both;
-
-            }
-            .fundi p {
-                margin: 0;
-                padding: 0;
-                line-height: 60px;
-                color: #fff;
-
-            }
-
-            a{
-                color:white;}
-            </style>
-        </head>
-    <body>
-        <div id="emri">
-
-        <img id="logo"src="llogoja2.png"/>
-        <img id="express"src="express.png"/>
-
-    </div>
-    <!--zevendso me<body style="background-image: url(images/bg.png);">-->
-    <div id='cssmenu'>
-        <ul>
-            <li class='has-sub'><a href="index.html"><span>Kryefaqja</span></a></li> 
-            <li class='has-sub'><a><span>Informacione</span></a>		
-            <li class='last'><a href="statusi.html"><span>Statusi</span></a></li>
-            <li class='last'><a href='nje-drejtimshe.html'><span>Rezervimet</span></a></li>
-            <li class='last'><a href='login.html'><span>Ky&ccedil;ja</span></a></li>
-            
+            <ul>
+                <li><img id="logo" src="images/logo1.png" /></li>
+                <li class='has-sub'><a href="index.html"><span>Kryefaqja</span></a></li>
+                <li class='has-sub'>
+                    <a><span>Informacione</span></a>
+                    <ul class="sub-menu">
+                        <li><a href='rreth_nesh.html'><span>Rreth nesh</span></a></li>
+                        <li><a href='sherbimet.html'><span>Sherbimet</span></a></li>
+                    </ul>
+                </li>
+                <li class='last'><a href="statusi.html"><span>Statusi</span></a></li>
+                <li class='last'><a href='nje-drejtimshe.html'><span>Rezervimet</span></a></li>
+                <li class='last'><a href='login.html'><span>Ky&ccedil;ja</span></a></li>
 
 
 
-
-
-        </ul>
-    </div>
+            </ul>
+        </div>
     <div>       
         <ul class="tabs">
             <li class="rez"><a href="#tab1">Vajtje-ardhje</a></li>
@@ -147,22 +120,52 @@
 
     <a href="loja.html" target="_blank"><strong>LUAJ KETU</strong></a>
     <footer>
-        <div class="footerleft">
+            <div class="footer_container">
+                <div class="container">
+                    <h3>RRETH NESH</h3>
 
-            <a href="https://www.facebook.com" target="_blank"><img class="fotoja" src="facebook-logo.png"></a>
+                    <p>Speed Air has been flying for 20 years and is Kosovo's most established private airline. Our experienced cabin and maintenance crew ensure maximum flight safety and security. Speed Air operates an affordable and flexible pricing policy that considers quality and customer satisfaction.</p>
+
+                </div>
+                <div class="container">
+                    <h3>FLUTURIMET</h3>
+                    <ul>
+                        <li><a href="./lisbon.html">Lisbon</a></li>
+                        <li><a href="./berlin.html">Berlin</a></li>
+                        <li><a href="./telaviv.html">Tel Aviv</a></li>
+                        <li><a href="./london.html">London</a></li>
+                        <li><a href="./Phuket.html">Phuket</a></li>
+                        <li><a href="./kuala.html">Kuala Lumpur</a></li>
+                        <li><a href="./hongkong.html">Hong Kong</a></li>
+                        <li><a href="./paris.html">Paris</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h3>FEEDBACK</h3>
+                    <ul>
+                        <li><a href="">@jessy45</a>Had  the most amazing experience with #RocketAir</li>
+                        <li><a href="">@kissington</a>Professionalim at its best! Way to go #RocketAir</li>
+                    </ul>
+                </div>
+
+                <div class="container">
+                    <h3>NA KONTAKTONI</h3>
+                    <label></label>
+                    <input type="text" name="Username" placeholder="Username">
+                    <label></label>
+                    <input type="text" name="Password" placeholder="Password" />
+                    <textarea name="message" rows="3" cols="21" placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" value="Submit" />
 
 
-            <a href="https://www.instagram.com" target="_blank"><img class="fotoja" src="instagram-logo.png"></a>
+                </div>
+            </div>
+        </footer>
 
-            <a href="https://www.twitter.com" target="_blank"><img class="fotoja" src="twitter-logo.png"></a>
-
+        <div id="bottom">
+            <p><em>&copy; 2019 <strong>Air Transat</strong>. All rights reserved.</em></p>
         </div>
-        <div class="footerright">    
-            <em>  &copy; Air Transat 2019.Te drejtat e rezervuara</em>
-
-            
-        </div>  
-    </footer>
 
 
 </body>
