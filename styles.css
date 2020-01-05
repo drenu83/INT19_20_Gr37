@@ -8,7 +8,7 @@
     float: left;
 }
 #cssmenu > ul {  
-  background: url(images/highlight-bg.png) repeat;
+  background: url(highlight-bg.png) repeat;
   padding-bottom: 3px;
   
 font-family: 'Open Sans', sans-serif;
@@ -67,14 +67,14 @@ clear: both;
 }
 #cssmenu > ul > li:hover > a {
   
-background: url(images/hover.png) repeat;
+background: url(hover.png) repeat;
 }
 #cssmenu > ul > li > a > span {
   line-height: 18px;
 }
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li > a:active {
-  background: url(images/highlight-bg.png) repeat;
+  background: url(highlight-bg.png) repeat;
 }
 /* Childs */
 #cssmenu > ul ul{
@@ -82,7 +82,7 @@ background: url(images/hover.png) repeat;
   visibility: visible;
   position: absolute;
   top: 120px;
-  background: url(images/hover.png) repeat;
+  background: url(hover.png) repeat;
   margin: 0;
   padding: 0;
   z-index: -1; 
@@ -135,10 +135,10 @@ text-shadow: 0 -1px 0 #c28130;
 #cssmenu > ul ul li 
 a:hover {
     border-left: 4px solid #055988;
-  background: url(images/highlight-bg.png) repeat;
+  background: url(highlight-bg.png) repeat;
 }
 #cssmenu > ul ul li a:active {
-  background: url(images/menu-bg.png) repeat;
+  background: url(menu-bg.png) repeat;
   
 }
 
@@ -218,7 +218,7 @@ button {
 .sign {
     width: 100%;
     height: 100px;
-    background: url(images/highlight-bg.png);
+    background: url(highlight-bg.png);
     box-sizing: border-box;
     display: inline-block;
     font-family:Verdana;
