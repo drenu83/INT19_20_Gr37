@@ -1,22 +1,18 @@
 #logo {
-    margin-right: 150px;
+    margin-right: 250px;
     zoom: 1.7;
-    margin-left: 30px;
+    margin-left: 30px;  
     width: 100px;
     height: 40px;
     border-radius: 35px;
     float: left;
 }
-
-
-#cssmenu > ul {
-    
-  background: url(highlight-bg.png) repeat;
+#cssmenu > ul {  
+  background: url(images/highlight-bg.png) repeat;
   padding-bottom: 3px;
   
 font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  
+font-weight: 600;  
 }
 #cssmenu:before,
 #cssmenu:after,
@@ -37,7 +33,7 @@ clear: both;
    
 }
     #cssmenu > ul {
-        background-color:aliceblue;
+        background-color: aliceblue;
         margin: 0;
         padding: 0;
         position: relative;
@@ -81,22 +77,15 @@ background: url(images/hover.png) repeat;
   background: url(images/highlight-bg.png) repeat;
 }
 /* Childs */
-#cssmenu > ul ul {
+#cssmenu > ul ul{
   opacity: 0;
-  visibility: hidden;
-  position: 
-absolute;
+  visibility: visible;
+  position: absolute;
   top: 120px;
   background: url(images/hover.png) repeat;
   margin: 0;
   padding: 0;
-  z-index: 
--1;
-  -webkit-transition: all 0.35s 0.2s ease-in-out;
-  -moz-transition: all 0.35s 0.2s ease-in-out;
-  
-  
-  transition: all 0.35s 0.2s ease-in-out;
+  z-index: -1; 
 }
 #cssmenu > ul 
 li:hover ul {
@@ -128,14 +117,13 @@ margin: 0;
 #cssmenu > ul ul li a {
   padding: 18px 26px;
   display: block;
-  color: 
-white;
+  color:lightblue;
   font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
   width: 150px;
   
-border-left: 4px solid transparent;
+border-left: 5px solid transparent;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: 
 all 0.35s ease-in-out;
@@ -163,7 +151,7 @@ nav {
     margin-bottom: 35%;
     margin-top: 20px;
     color: #00331a;
-    font-family:Verdana;
+font-family:Verdana;
 }
     nav img {
         margin: 0 0 0 5px;
@@ -185,6 +173,8 @@ nav {
     position: relative;
 }
 button {
+    background-color:#4CAF50;
+    color:white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -192,7 +182,7 @@ button {
     -ms-transform: translate(-50%, -50%);
     opacity: 0;
     font-size: 16px;
-    transition-duration: 0.4s;
+    transition: opacity 200ms ease-in-out .5s;
     cursor: pointer;
     padding: 16px 32px;
 }
@@ -230,7 +220,7 @@ button {
     height: 100px;
     background: url(images/highlight-bg.png);
     box-sizing: border-box;
-    display: inline-block; 
+    display: inline-block;
     font-family:Verdana;
 }
 
@@ -453,20 +443,29 @@ footer {
 }
 
 .footer_container div.container input[type=text] {
+    color:white;
+    background:rgba(0,0,0,0.5);
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
 .footer_container div.container textarea {
+    color:white;
+    background:rgba(0,0,0,0.5);
+    width:104px;
+    height:auto;
+    resize:none;
     padding: 8.5px;
     border-radius: 5px;
 }
 
 .footer_container div.container input[type=submit] {
-    padding: 5px 10px 5px 10px;
+    font-weight:bold;
+    padding: 10px 15px 10px 15px;
     float: right;
-    margin-right: 67px;
+    margin-top:5px;
+    margin-right: 180px;
     border-radius: 5px;
 }
 
