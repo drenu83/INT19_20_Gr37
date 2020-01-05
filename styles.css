@@ -443,8 +443,6 @@ footer {
 }
 
 .footer_container div.container input[type=text] {
-    color:white;
-    background:rgba(0,0,0,0.5);
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -455,8 +453,7 @@ footer {
     border-radius: 5px;
 }
 .footer_container div.container textarea {
-    color:white;
-    background:rgba(0,0,0,0.5);
+ 
     width:104px;
     height:auto;
     resize:none;
