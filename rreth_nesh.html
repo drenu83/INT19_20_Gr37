@@ -421,6 +421,36 @@
 
 
     </div>
+            <div>
+            <p>Count numbers: <output id="result1"></output></p>
+            <input type="button" id="btn6" onclick="startWorker()" value="Start Worker">
+            <input type="button" id="btn7" onclick="stopWorker()" value="Stop Worker">
+
+
+
+
+            <script>
+                var w;
+
+                function startWorker() {
+                    if (typeof (Worker) !== "undefined") {
+                        if (typeof (w) == "undefined") {
+                            w = new Worker("demo_workers.js");
+                        }
+                        w.onmessage = function (event) {
+                            document.getElementById("result1").innerHTML = event.data;
+                        };
+                    } else {
+                        document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Workers...";
+                    }
+                }
+
+                function stopWorker() {
+                    w.terminate();
+                    w = undefined;
+                }
+            </script>
+        </div>
                        <svg height="150" width="600">
               <defs>
                 <linearGradient id="grad1" x1="10%" y1="0%" x2="100%" y2="0%">
