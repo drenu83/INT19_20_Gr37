@@ -146,7 +146,21 @@
 
                 <hr />
                 <div id="vet">
-                    <h3>Vetë regjistrim</h3>
+                     <h3 id="nderro">Vetë regjistrim</h3>
+                    <script>
+                    (function() {
+                    var s = document.getElementById('nderro').style,
+                    f = false,
+                    c1 = '#000000',
+                    c2 = '#ffffff';
+
+                    setInterval(function() {
+                    s.backgroundColor = f ? c1 : c2;
+                    s.color = f ? c2 : c1;
+                    f = !f;
+                    }, 500);
+                    })();
+                    </script>
                     <p>Aktualisht, jan&euml; pes&euml; sportele ekzistuese ku udh&euml;tar&euml;t mund t&euml; b&euml;jn&euml; vet&euml; check-in n&euml; Aeroportin Nd&euml;rkomb&euml;tar t&euml; Prishtin&euml;s 'Adem Jashari', duke b&euml;r&euml; t&euml; mundur q&euml;&nbsp;<span>udh&euml;tar&euml;t&nbsp;</span>t&euml; regjistrohen vet&euml;.</p>
                 </div>
                 <hr />
