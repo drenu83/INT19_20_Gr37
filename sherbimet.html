@@ -190,7 +190,16 @@
               
                 <p><input type="button" id="btn1" onclick="clickCounter()" value="Me kliko!"></p>
                 <div id="result"></div>
+                <canvas id="myCanvas" width="200" height="100" style="border:5px solid #d3d3d3;">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
 
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.font = "30px Arial";
+                    ctx.fillText("Air Transat", 10, 50);
+                </script>
             </div>
 
         </div>
