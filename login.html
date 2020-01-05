@@ -1,19 +1,19 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
 
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css\fotoja.css">
+        <link rel="stylesheet" type="text/css" href="css/fotoja.css">
         <link href="styles.css" rel="stylesheet">
         <style>
 
             .wrap{
-	        max-width:400px;
+	        max-width:350px;
 	        border-radius:20px;
 	        margin:auto;
 	        background: rgba(0,0,0,0.8);
 	        box-sizing:border-box;
-	        padding:40px;
+	        padding:35px;
 	        color:#fff;
 	        margin-top:100px;
               }
@@ -28,7 +28,7 @@
         #gjinia{
 	        margin-left:100px;
         }
-        input[type=text], input[type=password]{
+        #name, #username,#email,#pass{
 	        width:100%;
 	        font-size:15px;
 	        box-sizing:border-box;
@@ -42,7 +42,7 @@
 	        margin:5px;
 	        font-weight:bold;
         }
-        input[type=submit]{
+        #btn{
 	        width:100%;
 	        box-sizing:border-box;
 	        padding:10px 0;
@@ -59,13 +59,12 @@
 	        background:#003366;
 	        opacity:0.7;
         }
-        #cssmenu{
-                margin: -10px -10px 0 -10px;              
+            #cssmenu{
+                margin: -10px -15px 0 -10px;              
             }
             footer{
                 margin: 20px -10px -10px -10px;   
             }
-            
         </style>
         <title>Kyqja</title>
         
@@ -101,7 +100,7 @@
                 <input type="password" id="pass" placeholder="Password">
                 <input type="radio" name="sex" value="Mashkull">Mashkull
                 <input type="radio" id="gjinia" name="sex" value="Femer">Femer<br>
-                <input type="submit" value="submit" onclick="notEmpty()">
+                <input type="submit" value="submit" id="btn" onclick="notEmpty()">
             </form>
             <script type="text/javascript">
                 function notEmpty() {
@@ -128,8 +127,7 @@
                     <div class="container">
                         <h3>RRETH NESH</h3>
 
-                        <p> Air Transat ka fluturuar për 20 vjet dhe është linja ajrore private më e themeluar e Kosovës. Kabina jonë me përvojë dhe ekuipazhi i mirëmbajtjes sigurojnë dhe ofrojne sigurinë maksimale të fluturimit.
-				Air Transat operon një politikë çmimi të përballueshëm dhe fleksibël që konsideron cilësinë dhe kënaqësinë e klientit.</p>
+                        <p>Speed Air has been flying for 20 years and is Kosovo's most established private airline. Our experienced cabin and maintenance crew ensure maximum flight safety and security. Speed Air operates an affordable and flexible pricing policy that considers quality and customer satisfaction.</p>
 
                     </div>
                     <div class="container">
@@ -148,20 +146,20 @@
                     <div class="container">
                         <h3>FEEDBACK</h3>
                         <ul>
-                            <li><a href="">@ArditaKras</a>Had  the most amazing experience with #AirTransat</li>
-                            <li><a href="">@AlbinaZekaj</a>Professionalim at its best! Way to go #AirTransat</li>
+                            <li><a href="">@jessy45</a>Had  the most amazing experience with #RocketAir</li>
+                            <li><a href="">@kissington</a>Professionalim at its best! Way to go #RocketAir</li>
                         </ul>
                     </div>
 
                     <div class="container">
                         <h3>KONTAKTONI</h3>
-                        <label></label>
-                        <input type="text" name="Username" placeholder="Username">
-                        <label></label>
-                        <input type="text" name="Password" placeholder="Password" />
-                        <textarea name="message" rows="3" cols="21" placeholder="Message"></textarea>
+                        <input type="text" name="Username" id="usern" placeholder="Username" />
                         <br>
-                        <input type="submit" value="Submit" />
+                        <input type="text" name="Password" id="usern" placeholder="Password" />
+                        <br>
+                        <textarea name="message" rows="3" cols="21" id="tekst" placeholder="Message"></textarea>
+                        <br>
+                        <input type="submit" id="sub" value="Submit" />
 
 
                     </div>
@@ -172,4 +170,5 @@
                 <p><em>&copy; 2019 <strong>Air Transat</strong>. All rights reserved.</em></p>
             </div>
 </body>
+
 </html>
